@@ -10,7 +10,10 @@ const EMAIL = 'email'
 const PHONE = 'phone'
 
 const MESSAGES = {
+    
+//Option for mailjet API contact form for contact.
   [EMAIL]: 'One of our experienced agents will be happy to answer all your questions. Enter your name, email, and the question you’d like to ask, and an agent will respond within 24 hours',
+    //This is when you want them to contact them via phone
   [PHONE]: 'One of our experienced agents will be happy to talk to you about your life insurance needs. Simply tell us when you’d like to be contacted, and we’ll call you.'
 }
 
@@ -20,7 +23,7 @@ const TITLES = {
 }
 
 let Contact = ({contactInfo, errors, email, message, question}) => <div>
-  <p><strong>Thank you for your interest in life insurance.</strong></p>
+  <p><strong>Thank you for your interest in getting your home designed.</strong></p>
   <p>{message}</p>
   <p><strong>Please fill out the following fields:</strong></p>
   <ContactForm

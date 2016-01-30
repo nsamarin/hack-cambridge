@@ -7,7 +7,8 @@ import createModal from './createModal'
 import {GlobalModal} from '../enums'
 import {LOCAL_SALES_AGENT_URL} from '../constants'
 
-let PermanentInsuranceModal = ({hideModal}) => <div>
+let PermanentInsuranceModal = ({hideModal}) => 
+<div>
   <Modal.Header closeButton onHide={hideModal}>
     <Modal.Title>Permanent Insurance</Modal.Title>
   </Modal.Header>

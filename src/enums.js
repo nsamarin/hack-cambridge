@@ -1,3 +1,5 @@
+//This is all about the reference statecodes and healthcodes
+
 import {stateCodes, healthCodes, productCodes, genderCodes} from './refdata'
 
 let nameToConst = (name) => name.replace(/\s/g, '_').toUpperCase()

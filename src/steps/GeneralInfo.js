@@ -14,7 +14,9 @@ import {PRIVACY_POLICY_URL} from '../constants'
 import {Gender, GeneralInfoModal, HealthCode, ProductCode, State} from '../enums'
 import {dollarOptions, genderOptions, healthOptions, integerOptions, productOptions, stateOptions} from '../options'
 import {debounce, isZip} from '../utils'
-
+/*
+This is all about the default elements of the form
+*/
 let FORM_DEFAULTS = {
   age: 35,
   coverage: 250000,
@@ -111,6 +113,7 @@ let GeneralInfo = React.createClass({
   },
 
   render() {
+//      console.log(this.props);
     let {errors, form} = this.state
     let {loading} = this.props
     return <div>
@@ -140,6 +143,17 @@ let GeneralInfo = React.createClass({
               onChange={debounce(this.handleZipChange, 250)}
               type="text"
               value={form.zipCode}
+            />
+          </FormField>
+            <FormField id="imageUpload" label="imageUpload Code" >
+                {/*//                error={errors.zipCode}*/}
+            <input
+              className="form-control"
+              id="imageUpload"
+              name="imageUpload"
+//              onChange={debounce(this.handleZipChange, 250)}
+              type="file"
+              value={form.homeImage}
             />
           </FormField>
           <FormField label="Do you use tobacco products?">
